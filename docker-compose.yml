@@ -7,9 +7,10 @@ services:
       - 3000:3000
     volumes:
       - ./frontend:/frontend
+    depends_on:
+      - app
   app:
-    # build: ./app
-    image: docker-cours-flask-mysql_app
+    build: ./app
     ports:
       - "5000:5000"
     restart: always

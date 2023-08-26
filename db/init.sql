@@ -9,8 +9,3 @@ CREATE TABLE mybook (
   PRIMARY KEY (id)
 );
 
-INSERT INTO mybook
-  (author, title, isbn)
-VALUES
-  ('RANDRIA', 'Python', 1345674),
-  ('RAKOTO', 'Devops', 156433);
